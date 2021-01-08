@@ -4,7 +4,7 @@ Monolite is two things in one :
 - a style reset to unify browser rendering.
 - a set of reusable elements (details below)
 
-It is meant to help you build clean websites before you start implementing a graphics chart.
+It is meant to help you build clean websites before you start implementing a graphics chart, or small projects that don't need one.
 
 **It is still in very early development.**
 
