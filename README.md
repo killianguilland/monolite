@@ -6,7 +6,8 @@ Monolite is two things in one :
 
 It is meant to help you build clean websites before you start implementing a graphics chart.
 
-**It is still in very early development.**
+**It is still in very early development.**+++
+
 
 ## Installation
 

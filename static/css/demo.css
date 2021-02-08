@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#monolite-display-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 70vh;
+}
+#monolite-display-container::before {
+  content: "";
+  pointer-events: none;
+  display: block;
+  position: absolute;
+  top: 24px;
+  bottom: 24px;
+  right: 24px;
+  left: 24px;
+  border: solid 2px white;
+}
+
+#monolite-display-logo {
+  display: grid;
+  grid-template-columns: repeat(4, 64px);
+  grid-template-rows: repeat(4, 64px);
+  font-weight: 700;
+  font-size: 32px;
+  text-transform: uppercase;
+  text-align: center;
+}
+#monolite-display-logo > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+}
+#monolite-display-logo > .mono:active, #monolite-display-logo > .lite:active, #monolite-display-logo > .shadow:active {
+  background: black;
+  color: white;
+  text-shadow: none;
+  filter: invert(1);
+}
+#monolite-display-logo .mono {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+#monolite-display-logo .lite {
+  color: black;
+  text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+  font-family: "Montserrat", sans-serif;
+}
+#monolite-display-logo .shadow {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+#monolite-display-content {
+  height: 256px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 5vw;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  position: relative;
+}
+#monolite-display-content h1 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+#monolite-display-content small {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+}
+#monolite-display-content a {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 20px;
+  font-size: 1em;
+  text-decoration: none;
+  border-bottom: dotted 1px white;
+  color: white;
+}
+#monolite-display-content a:hover {
+  border-bottom-style: solid;
+}
+
+/*# sourceMappingURL=demo.css.map */
